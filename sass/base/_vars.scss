@@ -1,0 +1,25 @@
+:root {
+    --textColor: #000;
+    --mainColor1: #039be5;
+    --mainColor2: #ea736d;
+    --mainColor3: #fbdc4d;
+    --mainFF: "Mplus 1p";
+    --buttonTextFF: "Mplus 1p";
+
+    --underlineColor: var(--mainColor3);
+
+    --buttonColor: var(--mainColor3);
+    --buttonHoverColor: #ffd200;
+    --buttonActColor: #e1bc10;
+
+    --buttonOutColor: #464646;
+    --buttonOutHoverColor: #797979;
+    --buttonOutActColor: #181818;
+
+    // Brands colors
+
+    --telColor: #039be5;
+    --vkColor: #4d76a1;
+    --fbColor: #3b5998;
+    --ghColor: #212121;
+}

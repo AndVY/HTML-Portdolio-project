@@ -1,0 +1,111 @@
+/* Reset and base styles  */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--mainFF), sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--textColor);
+}
+
+html,
+body > * {
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+blockquote,
+pre,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+button,
+input,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+    padding: 0;
+}
+
+button,
+input {
+    outline: none;
+}
+
+button {
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+label {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+svg {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+legend {
+    display: block;
+}
+
+a,
+a:hover {
+    display: inline-block;
+
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+/* Grid styles */
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
+}
+
+/* Utility */
+
+.none {
+    display: none !important;
+}
