@@ -1,0 +1,76 @@
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    background-color: #f4f8f9;
+
+    .title-2 {
+        margin-bottom: 65px;
+    }
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+.filters__item {
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #8fa5ae;
+
+    @include tranzpro(color);
+
+    &:not(:last-child) {
+        margin-right: 80px;
+    }
+}
+
+.filters__item.filters__item--active {
+    color: var(--textColor);
+}
+
+.filters__item:hover,
+.filters__item:active {
+    color: var(--hoverColor);
+}
+
+.project-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-cards__wrapper {
+    &:hover,
+    &:active {
+        // Card overlay button appears
+        .project-card__image .btn {
+            opacity: 1;
+        }
+        // Card overlay moves from left
+        .project-card__image::after {
+            transform: translateX(0);
+        }
+        // Card subtitile text color and underlining
+        .project-card__description h4 {
+            color: var(--hoverColor);
+
+            &::after {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+.project-cards__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

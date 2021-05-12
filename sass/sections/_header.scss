@@ -56,7 +56,7 @@
 
     &::after {
         opacity: 0;
-        transition: opacity 0.2s ease-in;
+        @include tranzpro(opacity);
     }
 
     &:hover:after,
@@ -77,8 +77,9 @@
 
 .header-top__social-item {
     width: 28px;
-    transition: color 0.2s ease-in;
     outline: none;
+
+    @include tranzpro(color);
 
     &:not(:last-child) {
         margin-right: 20px;

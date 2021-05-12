@@ -43,3 +43,27 @@
         color: var(--buttonOutActColor);
     }
 }
+
+.btn.btn--overlay {
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 52px;
+
+    line-height: 44px;
+
+    background-color: var(--buttonColor);
+    border-color: var(--textColor);
+    color: var(--textColor);
+
+    @include tranzpro(opacity);
+
+    // &:hover {
+    //     border-color: var(--buttonOutHoverColor);
+    //     color: var(--buttonOutHoverColor);
+    // }
+
+    // &:active {
+    //     border-color: var(--buttonOutActColor);
+    //     color: var(--buttonOutActColor);
+    // }
+}

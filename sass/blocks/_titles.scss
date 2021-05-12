@@ -1,14 +1,28 @@
 .title-1 {
     font-size: 90px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.15;
 
     & span::after {
         bottom: 14px;
     }
 }
 
+.title-2 {
+    font-size: 64px;
+    font-weight: 800;
+
+    &::after {
+        bottom: 19px;
+    }
+}
+
 .title-3 {
     font-size: 40px;
+    font-weight: 700;
+}
+
+.title-4 {
+    font-size: 32px;
     font-weight: 700;
 }

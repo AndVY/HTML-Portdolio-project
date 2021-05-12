@@ -16,10 +16,10 @@
     border-radius: 50%;
     background-color: transparent;
 
-    @include tranz;
+    @include tranzpro(transform);
 
     &:hover {
-        box-shadow: 0 0 5px 1px var(--mainColor1);
+        transform: scale(1.05);
     }
 
     &.social-icon--gh {

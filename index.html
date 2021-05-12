@@ -68,7 +68,7 @@
         <meta name="theme-color" content="#ffffff" />
     </head>
     <body>
-        <header class="header">
+        <header class="header none">
             <div class="header-top">
                 <div class="header-top__logo">
                     <a href="./index.html"
@@ -76,19 +76,19 @@
                     >
                 </div>
                 <nav class="header-top__nav">
-                    <a class="header-top__nav-item underlined-thin" href="#"
+                    <a class="header-top__nav-item underlined-thin" href="#!"
                         >Главная</a
                     >
-                    <a class="header-top__nav-item underlined-thin" href="#"
+                    <a class="header-top__nav-item underlined-thin" href="#!"
                         >Работы</a
                     >
-                    <a class="header-top__nav-item underlined-thin" href="#"
+                    <a class="header-top__nav-item underlined-thin" href="#!"
                         >Контакты</a
                     >
                 </nav>
                 <div class="header-top__social">
                     <a
-                        href="#"
+                        href="#!"
                         class="
                             header-top__social-item header-top__social-item--li
                         "
@@ -110,7 +110,7 @@
                         </svg>
                     </a>
                     <a
-                        href="#"
+                        href="#!"
                         class="
                             header-top__social-item header-top__social-item--gh
                         "
@@ -132,13 +132,12 @@
                         </svg>
                     </a>
                     <a
-                        href="#"
+                        href="#!"
                         class="
                             header-top__social-item header-top__social-item--vk
                         "
                     >
                         <svg
-                            transform="scale(1.4) translate(0,-2)"
                             aria-hidden="true"
                             focusable="false"
                             data-prefix="fab"
@@ -148,6 +147,7 @@
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 576
                             512"
+                            transform="scale(1.35) translate(0,-2)"
                         >
                             <path
                                 fill="currentColor"
@@ -173,9 +173,9 @@
                                 </p>
                             </div>
                             <div class="header-info__content-buttons">
-                                <a href="#" class="btn">Познакомиться</a
+                                <a href="#skills" class="btn">Познакомиться</a
                                 ><!-- remove interval between inline-blocks
-                            --><a href="#" class="btn btn--outlined"
+                            --><a href="#!" class="btn btn--outlined"
                                     >Контакты</a
                                 >
                             </div>
@@ -183,7 +183,7 @@
                         <div class="header-info__content-img">
                             <div class="header-info__content-img-wrapper">
                                 <img
-                                    src="./img/content-images/title-photo.JPG"
+                                    src="./img/content-images/title-photo.png"
                                     alt="Me"
                                 />
                             </div>
@@ -197,13 +197,11 @@
                     alt="Photo"
                 />
             </div>
-            <div class="header-bottom">
+            <div class="header-bottom" id="skills">
                 <div class="container">
                     <div class="header-bottom__content">
                         <div class="header-bottom__content-skills">
-                            <h3 class="title-3">
-                                Что я умею:
-                            </h3>
+                            <h3 class="title-3">Что я умею:</h3>
                             <ul class="header-bottom__content-list">
                                 <li>
                                     pixel perfect, полное соответствие макету.
@@ -216,15 +214,16 @@
                                 <li>с Bootstrap и без него.</li>
                             </ul>
                             <div class="header-bottom__content-button">
-                                <a href="#" class="btn">Смотреть работы</a>
+                                <a href="#!" class="btn">Смотреть работы</a>
                             </div>
                         </div>
                         <div class="header-bottom__content-contacts">
-                            <h3 class="title-3">
-                                На связи:
-                            </h3>
+                            <h3 class="title-3">На связи:</h3>
                             <div class="social-icons">
-                                <a href="#" class="social-icon social-icon--gh">
+                                <a
+                                    href="#!"
+                                    class="social-icon social-icon--gh"
+                                >
                                     <svg
                                         aria-hidden="true"
                                         focusable="false"
@@ -241,7 +240,9 @@
                                         ></path>
                                     </svg>
                                 </a>
-                                <a href="#" class="social-icon social-icon--tel"
+                                <a
+                                    href="#!"
+                                    class="social-icon social-icon--tel"
                                     ><svg
                                         aria-hidden="true"
                                         focusable="false"
@@ -260,7 +261,7 @@
                                             d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"
                                         ></path></svg></a
                                 ><a
-                                    href="#"
+                                    href="#!"
                                     class="social-icon social-icon--vk"
                                 >
                                     <svg
@@ -278,7 +279,9 @@
                                             d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"
                                         ></path>
                                     </svg> </a
-                                ><a href="#" class="social-icon social-icon--fb"
+                                ><a
+                                    href="#!"
+                                    class="social-icon social-icon--fb"
                                     ><svg
                                         aria-hidden="true"
                                         focusable="false"
@@ -310,6 +313,122 @@
             </div>
         </header>
 
-        <footer class="footer"></footer>
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <h2 class="underlined title-2">Портфолио</h2>
+                <nav class="filters">
+                    <a class="filters__item filters__item--active" href="#!"
+                        >Все работы</a
+                    ><a class="filters__item" href="#!">Bootstrap</a
+                    ><a class="filters__item" href="#!">WordPress</a
+                    ><a class="filters__item" href="#!">Frontend</a>
+                </nav>
+
+                <!-- project-cards -->
+                <div class="project-cards">
+                    <div class="project-cards__row">
+                        <a class="project-cards__wrapper" href="#!">
+                            <div class="project-card project-card--big">
+                                <div class="project-card__image">
+                                    <button class="btn btn--overlay">
+                                        Смотреть проект
+                                    </button>
+                                    <img
+                                        src="./img/content-images/works/work01.jpg"
+                                        alt="Site photo"
+                                    />
+                                </div>
+                                <div class="project-card__description">
+                                    <h4 class="title-4">
+                                        Верстка “Форест тревел”
+                                    </h4>
+                                    <p>Верстка многостраничного сайта.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-cards__wrapper" href="#!">
+                            <div class="project-card project-card--big">
+                                <div class="project-card__image">
+                                    <button class="btn btn--overlay">
+                                        Смотреть проект
+                                    </button>
+                                    <img
+                                        src="./img/content-images/works/work02.jpg"
+                                        alt="Site photo"
+                                    />
+                                </div>
+                                <div class="project-card__description">
+                                    <h4 class="title-4">
+                                        Сайт для коворкинга “Мечта”
+                                    </h4>
+                                    <p>Верстка лендинга.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end of cards__row -->
+
+                    <div class="project-cards__row">
+                        <a class="project-cards__wrapper" href="#!">
+                            <div class="project-card">
+                                <div class="project-card__image">
+                                    <button class="btn btn--overlay">
+                                        Смотреть проект
+                                    </button>
+                                    <img
+                                        src="./img/content-images/works/work03.jpg"
+                                        alt="Site photo"
+                                    />
+                                </div>
+                                <div class="project-card__description">
+                                    <h4 class="title-4">Верстка “Юнит”</h4>
+                                    <p>Верстка лендинга.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-cards__wrapper" href="#!">
+                            <div class="project-card">
+                                <div class="project-card__image">
+                                    <button class="btn btn--overlay">
+                                        Смотреть проект
+                                    </button>
+                                    <img
+                                        src="./img/content-images/works/work04.jpg"
+                                        alt="Site photo"
+                                    />
+                                </div>
+                                <div class="project-card__description">
+                                    <h4 class="title-4">Верстка “Мир Авто”</h4>
+                                    <p>Верстка многостраничного сайта.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="project-cards__wrapper" href="#!">
+                            <div class="project-card">
+                                <div class="project-card__image">
+                                    <button class="btn btn--overlay">
+                                        Смотреть проект
+                                    </button>
+                                    <img
+                                        src="./img/content-images/works/work05.jpg"
+                                        alt="Site photo"
+                                    />
+                                </div>
+                                <div class="project-card__description">
+                                    <h4 class="title-4">Верстка “Мир Авто”</h4>
+                                    <p>Верстка многостраничного сайта.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end of cards__row -->
+                </div>
+                <!-- end of project-cards -->
+            </div>
+        </section>
+
+        <footer class="footer none"></footer>
+
+        <script src="./js/workFilter.js"></script>
     </body>
 </html>
