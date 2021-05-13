@@ -376,8 +376,11 @@ a:hover {
 }
 
 .portfolio {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 120px;
   padding-bottom: 120px;
+  max-width: 1600px;
   background-color: #f4f8f9;
 }
 .portfolio .title-2 {
@@ -497,6 +500,77 @@ a:hover {
   display: none;
 }
 
+.contacts {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 160px;
+  padding-bottom: 150px;
+  max-width: 1600px;
+  overflow: hidden;
+  background-image: url("../img/site-images/backgrounds/contacts-background.jpg");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: auto;
+}
+.contacts .title-2 {
+  margin-bottom: 80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.contacts__content {
+  position: relative;
+}
+
+.contacts__content-info {
+  padding-top: 30px;
+  max-width: 555px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.contacts__content-text {
+  margin-bottom: 45px;
+}
+
+.dots {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -350px;
+  width: 448px;
+  height: 280px;
+}
+
+.contacts__content-data {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contacts__content-data ul li:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.contacts__content-names {
+  margin-right: 30px;
+  width: 165px;
+}
+
+.contacts__content-values {
+  max-width: 360px;
+  font-weight: 500;
+}
+.contacts__content-values ul *:nth-child(-n + 2) {
+  color: var(--mainColor1);
+}
+.contacts__content-values ul *:nth-child(n + 3) {
+  color: #96969d;
+}
+
 .btn {
   display: inline-block;
   padding-left: 40px;
@@ -568,7 +642,7 @@ a:hover {
 
 .title-2 {
   font-size: 64px;
-  font-weight: 800;
+  font-weight: 700;
 }
 .title-2::after {
   bottom: 19px;
