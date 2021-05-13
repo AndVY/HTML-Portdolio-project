@@ -137,6 +137,7 @@
                             header-top__social-item header-top__social-item--vk
                         "
                     >
+                        <!-- transform="scale(1.35) translate(0,-2)" -->
                         <svg
                             aria-hidden="true"
                             focusable="false"
@@ -145,8 +146,7 @@
                             class="svg-inline--fa fa-vk fa-w-18"
                             role="img"
                             xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576
-                            512"
+                            viewBox="0 0 576 512"
                             transform="scale(1.35) translate(0,-2)"
                         >
                             <path
@@ -214,7 +214,9 @@
                                 <li>с Bootstrap и без него.</li>
                             </ul>
                             <div class="header-bottom__content-button">
-                                <a href="#!" class="btn">Смотреть работы</a>
+                                <a href="#portfolio" class="btn"
+                                    >Смотреть работы</a
+                                >
                             </div>
                         </div>
                         <div class="header-bottom__content-contacts">
@@ -313,7 +315,7 @@
             </div>
         </header>
 
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio none" id="portfolio">
             <div class="container">
                 <h2 class="underlined title-2">Портфолио</h2>
                 <nav class="filters">
@@ -326,109 +328,200 @@
 
                 <!-- project-cards -->
                 <div class="project-cards">
-                    <div class="project-cards__row">
-                        <a class="project-cards__wrapper" href="#!">
-                            <div class="project-card project-card--big">
-                                <div class="project-card__image">
-                                    <button class="btn btn--overlay">
-                                        Смотреть проект
-                                    </button>
-                                    <img
-                                        src="./img/content-images/works/work01.jpg"
-                                        alt="Site photo"
-                                    />
+                    <a class="project-cards__wrapper" href="#!">
+                        <div class="project-card project-card--big">
+                            <div class="project-card__image">
+                                <div class="btn btn--overlay">
+                                    Смотреть проект
                                 </div>
-                                <div class="project-card__description">
-                                    <h4 class="title-4">
-                                        Верстка “Форест тревел”
-                                    </h4>
-                                    <p>Верстка многостраничного сайта.</p>
-                                </div>
+                                <img
+                                    src="./img/content-images/works/work01.jpg"
+                                    alt="Site photo"
+                                />
                             </div>
-                        </a>
-                        <a class="project-cards__wrapper" href="#!">
-                            <div class="project-card project-card--big">
-                                <div class="project-card__image">
-                                    <button class="btn btn--overlay">
-                                        Смотреть проект
-                                    </button>
-                                    <img
-                                        src="./img/content-images/works/work02.jpg"
-                                        alt="Site photo"
-                                    />
-                                </div>
-                                <div class="project-card__description">
-                                    <h4 class="title-4">
-                                        Сайт для коворкинга “Мечта”
-                                    </h4>
-                                    <p>Верстка лендинга.</p>
-                                </div>
+                            <div class="project-card__description">
+                                <h4 class="title-4">Верстка “Форест тревел”</h4>
+                                <p>Верстка многостраничного сайта.</p>
                             </div>
-                        </a>
-                    </div>
-                    <!-- end of cards__row -->
-
-                    <div class="project-cards__row">
-                        <a class="project-cards__wrapper" href="#!">
-                            <div class="project-card">
-                                <div class="project-card__image">
-                                    <button class="btn btn--overlay">
-                                        Смотреть проект
-                                    </button>
-                                    <img
-                                        src="./img/content-images/works/work03.jpg"
-                                        alt="Site photo"
-                                    />
+                        </div>
+                    </a>
+                    <a class="project-cards__wrapper" href="#!">
+                        <div class="project-card project-card--big">
+                            <div class="project-card__image">
+                                <div class="btn btn--overlay">
+                                    Смотреть проект
                                 </div>
-                                <div class="project-card__description">
-                                    <h4 class="title-4">Верстка “Юнит”</h4>
-                                    <p>Верстка лендинга.</p>
-                                </div>
+                                <img
+                                    src="./img/content-images/works/work02.jpg"
+                                    alt="Site photo"
+                                />
                             </div>
-                        </a>
-                        <a class="project-cards__wrapper" href="#!">
-                            <div class="project-card">
-                                <div class="project-card__image">
-                                    <button class="btn btn--overlay">
-                                        Смотреть проект
-                                    </button>
-                                    <img
-                                        src="./img/content-images/works/work04.jpg"
-                                        alt="Site photo"
-                                    />
-                                </div>
-                                <div class="project-card__description">
-                                    <h4 class="title-4">Верстка “Мир Авто”</h4>
-                                    <p>Верстка многостраничного сайта.</p>
-                                </div>
+                            <div class="project-card__description">
+                                <h4 class="title-4">
+                                    Сайт для коворкинга “Мечта”
+                                </h4>
+                                <p>Верстка лендинга.</p>
                             </div>
-                        </a>
-                        <a class="project-cards__wrapper" href="#!">
-                            <div class="project-card">
-                                <div class="project-card__image">
-                                    <button class="btn btn--overlay">
-                                        Смотреть проект
-                                    </button>
-                                    <img
-                                        src="./img/content-images/works/work05.jpg"
-                                        alt="Site photo"
-                                    />
+                        </div>
+                    </a>
+                    <a class="project-cards__wrapper" href="#!">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <div class="btn btn--overlay">
+                                    Смотреть проект
                                 </div>
-                                <div class="project-card__description">
-                                    <h4 class="title-4">Верстка “Мир Авто”</h4>
-                                    <p>Верстка многостраничного сайта.</p>
-                                </div>
+                                <img
+                                    src="./img/content-images/works/work03.jpg"
+                                    alt="Site photo"
+                                />
                             </div>
-                        </a>
-                    </div>
-                    <!-- end of cards__row -->
+                            <div class="project-card__description">
+                                <h4 class="title-4">Верстка “Юнит”</h4>
+                                <p>Верстка лендинга.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-cards__wrapper" href="#!">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <div class="btn btn--overlay">
+                                    Смотреть проект
+                                </div>
+                                <img
+                                    src="./img/content-images/works/work04.jpg"
+                                    alt="Site photo"
+                                />
+                            </div>
+                            <div class="project-card__description">
+                                <h4 class="title-4">Верстка “Мир Авто”</h4>
+                                <p>Верстка многостраничного сайта.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="project-cards__wrapper" href="#!">
+                        <div class="project-card">
+                            <div class="project-card__image">
+                                <div class="btn btn--overlay">
+                                    Смотреть проект
+                                </div>
+                                <img
+                                    src="./img/content-images/works/work05.jpg"
+                                    alt="Site photo"
+                                />
+                            </div>
+                            <div class="project-card__description">
+                                <h4 class="title-4">Верстка “Мир Авто”</h4>
+                                <p>Верстка многостраничного сайта.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 <!-- end of project-cards -->
             </div>
         </section>
 
+        <section class="timeline">
+            <div class="container">
+                <h2 class="title-2 underlined">Как я работаю</h2>
+
+                <!-- timeline__content -->
+                <div class="timeline__content">
+                    <div class="timeline-card">
+                        <div class="timeline-card__text">
+                            <h4 class="title-4 underlined">Оцениваю макет</h4>
+                            <p>
+                                Оцениваю объем работы, сложность, нюансы. Задаю
+                                вопросы.
+                            </p>
+                            <p class="timeline-card__time">Время: 2 - 4 часа</p>
+                        </div>
+                        <div class="timeline-card__image">
+                            <img src="./img/icons/layers.png" alt="Layers" />
+                        </div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card__text">
+                            <h4 class="title-4 underlined">
+                                ТЗ, смета и график работ
+                            </h4>
+                            <p>
+                                Согласовываем техническое задание и график работ
+                                по проекту. Осмечиваю стоимость по этапам
+                                работы.
+                            </p>
+                            <p class="timeline-card__time">Время: 2 - 4 часа</p>
+                        </div>
+                        <div class="timeline-card__image">
+                            <img
+                                src="./img/icons/presentation-chart.png"
+                                alt="Chart"
+                            />
+                        </div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card__text">
+                            <h4 class="title-4 underlined">
+                                Вы держите руку на пульсе
+                            </h4>
+                            <p>
+                                Выдаю клиенту доступ к GitHub репозиторию. Вы в
+                                любое время можете видеть актуальное состояние
+                                проекта и задач.
+                            </p>
+                            <p class="timeline-card__time">Время: 1 час</p>
+                        </div>
+                        <div class="timeline-card__image">
+                            <img
+                                src="./img/icons/24-hours.png"
+                                alt="24 hours"
+                            />
+                        </div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card__text">
+                            <h4 class="title-4 underlined">
+                                Выполняю каждый этап
+                            </h4>
+                            <p>
+                                Поочередно выполняю каждый этап работы. Передаю
+                                результаты. Заказчик производит поэтапную
+                                оплату.
+                            </p>
+                            <p class="timeline-card__time">
+                                Время: 2 - 14 дней
+                            </p>
+                        </div>
+                        <div class="timeline-card__image">
+                            <img src="./img/icons/code-alt.png" alt="Code" />
+                        </div>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-card__text">
+                            <h4 class="title-4 underlined">
+                                Финальное ревью проекта
+                            </h4>
+                            <p>
+                                Проект готов. Финальное ревью и полировка до
+                                идеального состояния. Передаю файлы проекта,
+                                заливаю сайт на хостинг заказчика.
+                            </p>
+                            <p class="timeline-card__time">Время: 3 - 4 часа</p>
+                        </div>
+                        <div class="timeline-card__image">
+                            <img src="./img/icons/diamond.png" alt="Diamond" />
+                        </div>
+                    </div>
+                </div>
+                <!-- end of timeline__content -->
+            </div>
+        </section>
+
         <footer class="footer none"></footer>
 
+        <!-- 3rd party scripts -->
+        <script src="./libs/jquery-3.6.0.min.js"></script>
+
+        <!-- project scripts -->
         <script src="./js/workFilter.js"></script>
     </body>
 </html>

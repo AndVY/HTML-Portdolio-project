@@ -40,10 +40,16 @@
 
 .project-cards {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    margin-bottom: -30px;
 }
 
 .project-cards__wrapper {
+    margin-bottom: 30px;
+
     &:hover,
     &:active {
         // Card overlay button appears
@@ -65,12 +71,12 @@
     }
 }
 
-.project-cards__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+// .project-cards__row {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-start;
 
-    &:not(:last-child) {
-        margin-bottom: 30px;
-    }
-}
+//     &:not(:last-child) {
+//         margin-bottom: 30px;
+//     }
+// }

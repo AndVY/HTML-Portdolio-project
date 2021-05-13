@@ -51,19 +51,20 @@
 
     line-height: 44px;
 
-    background-color: var(--buttonColor);
-    border-color: var(--textColor);
-    color: var(--textColor);
+    background-color: #fff;
+    border-color: #fff;
+    color: var(--mainColor2);
 
-    @include tranzpro(opacity);
+    @include tranz;
 
-    // &:hover {
-    //     border-color: var(--buttonOutHoverColor);
-    //     color: var(--buttonOutHoverColor);
-    // }
+    &:hover {
+        border-color: var(--mainColor2);
+        background-color: var(--mainColor2);
+        color: #fff;
+    }
 
-    // &:active {
-    //     border-color: var(--buttonOutActColor);
-    //     color: var(--buttonOutActColor);
-    // }
+    &:active {
+        border-color: #d4423b;
+        background-color: #d4423b;
+    }
 }
