@@ -20,7 +20,6 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="./fonts/mplus1p/stylesheet.css" />
         <link rel="stylesheet" href="./fonts/Roboto/stylesheet.css" />
-        <link rel="stylesheet" href="./fonts/FontAwesome/fontawesome.css" />
 
         <!-- Styles -->
         <link rel="stylesheet" href="./css/main.css" />
@@ -179,7 +178,7 @@
                             <div class="header-info__content-buttons">
                                 <a href="#skills" class="btn">Познакомиться</a
                                 ><!-- remove interval between inline-blocks
-                            --><a href="#!" class="btn btn--outlined"
+                            --><a href="#contacts" class="btn btn--outlined"
                                     >Контакты</a
                                 >
                             </div>
@@ -427,7 +426,6 @@
         <section class="timeline">
             <div class="container">
                 <h2 class="title-2 underlined">Как я работаю</h2>
-
                 <!-- timeline__content -->
                 <div class="timeline__content">
                     <div class="timeline-card">
@@ -624,20 +622,77 @@
                             </a>
                         </div>
                     </div>
-                    <form
-                        action="https://andrewvy.ru"
-                        class="contacts__content-form"
-                    ></form>
+                    <form action="./php/mail.php" class="contact-form">
+                        <div class="contact-form__item">
+                            <span class="contact-form__fake-placeholder"
+                                >Ваш Email</span
+                            >
+                            <input
+                                type="text"
+                                name="email"
+                                class="contact-form__field"
+                            />
+                        </div>
+                        <div class="contact-form__item">
+                            <span class="contact-form__fake-placeholder"
+                                >Тема письма</span
+                            >
+                            <input
+                                type="text"
+                                name="subject"
+                                class="contact-form__field"
+                            />
+                        </div>
+                        <div class="contact-form__item">
+                            <span class="contact-form__fake-placeholder"
+                                >Сообщение</span
+                            >
+                            <textarea
+                                name="message"
+                                class="contact-form__field"
+                            ></textarea>
+                        </div>
+                        <div class="contact-form__item">
+                            <input
+                                type="submit"
+                                class="btn"
+                                value="Отправить"
+                            />
+                        </div>
+                    </form>
+                    <div id="answer"></div>
                 </div>
             </div>
         </section>
 
-        <footer class="footer none"></footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__copyright">
+                        &copy; 2021 — Андрей Емелин
+                    </div>
+                    <p>
+                        Веб-разработчик из Санкт-Петербурга, занимаюсь версткой
+                        и созданием сайтов.<br />Этот сайт сделал в рамках
+                        прохождения обучения по верстке на курсах от
+                        <a
+                            target="_blank"
+                            class="underlined-thin"
+                            href="https://webcademy.ru"
+                            >WebCademy.ru</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </footer>
 
         <!-- 3rd party scripts -->
         <script src="./libs/jquery-3.6.0.min.js"></script>
+        <script src="./libs/jquery.validate.js"></script>
 
         <!-- project scripts -->
         <script src="./js/workFilter.js"></script>
+        <script src="./js/placeholder.js"></script>
+        <script src="./js/sendForm.js"></script>
     </body>
 </html>

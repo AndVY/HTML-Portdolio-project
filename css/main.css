@@ -75,14 +75,27 @@ button {
 }
 
 button,
+textarea,
 input {
   outline: none;
+}
+
+textarea {
+  resize: none;
 }
 
 button {
   display: inline-block;
   cursor: pointer;
   background-color: transparent;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 label {
@@ -380,7 +393,6 @@ a:hover {
   margin-right: auto;
   padding-top: 120px;
   padding-bottom: 120px;
-  max-width: 1600px;
   background-color: #f4f8f9;
 }
 .portfolio .title-2 {
@@ -520,6 +532,10 @@ a:hover {
 }
 
 .contacts__content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   position: relative;
 }
 
@@ -570,6 +586,51 @@ a:hover {
 .contacts__content-values ul *:nth-child(n + 3) {
   color: #96969d;
 }
+.contacts__content-values a {
+  transition: color 0.2s ease-in;
+}
+.contacts__content-values a:hover {
+  color: var(--mainColor2);
+}
+
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  background-color: #333333;
+}
+
+.footer__content {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.footer__content a,
+.footer__content p {
+  color: #96969d;
+}
+.footer__content a.underlined-thin {
+  transition: 0.2s ease-in;
+}
+.footer__content a.underlined-thin::after {
+  transition: 0.2s ease-in;
+  height: 1px;
+  background-color: #96969d;
+}
+.footer__content a.underlined-thin:hover, .footer__content a.underlined-thin:active {
+  color: #fff;
+}
+.footer__content a.underlined-thin:hover::after, .footer__content a.underlined-thin:hover:active {
+  background-color: #fff;
+}
+
+.footer__copyright {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
 
 .btn {
   display: inline-block;
@@ -615,6 +676,7 @@ a:hover {
   padding-left: 30px;
   padding-right: 30px;
   height: 52px;
+  white-space: nowrap;
   line-height: 44px;
   background-color: #fff;
   border-color: #fff;
@@ -778,6 +840,7 @@ a:hover {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  font-size: 26px;
   transition: 0.2s ease-in;
 }
 .project-card h4::after {
@@ -793,12 +856,20 @@ a:hover {
   transition: 0.2s ease-in;
 }
 
+.project-card.project-card--big h4 {
+  font-size: 32px;
+}
+
 .project-card__description p {
   font-size: 20px;
   font-weight: 300;
 }
 .project-card__description p:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.project-card.project-card--big .project-card__description p {
+  font-size: 22px;
 }
 
 .timeline-card {
@@ -875,6 +946,70 @@ a:hover {
   border-radius: 25px;
   background-color: #fff;
   box-shadow: 0 0 20px 10px #d3e6f3;
+}
+
+.contact-form {
+  width: 515px;
+  padding: 60px 60px 40px 60px;
+  background-color: #fff;
+  box-shadow: 0 0 30px 10px #d3e6f3;
+}
+
+.contact-form__item {
+  position: relative;
+}
+.contact-form__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.contact-form__field {
+  width: 100%;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--textColor);
+  border: none;
+  border-bottom: 2px solid #eaeaea;
+}
+
+.contact-form__field.active {
+  border-bottom: 2px solid var(--mainColor2);
+}
+
+textarea.contact-form__field {
+  height: 120px;
+}
+
+.contact-form__fake-placeholder {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #96969d;
+  pointer-events: none;
+  transition: 0.2s ease-in;
+}
+
+.contact-form__fake-placeholder.active {
+  top: -20px;
+  font-size: 16px;
+  color: #ed9626;
+}
+
+label.error {
+  position: relative;
+  top: -10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: red;
+}
+
+#answer .contact-form__success h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--mainColor1);
+  text-shadow: 0 1px 1px #96969d;
 }
 
 /*# sourceMappingURL=main.css.map */

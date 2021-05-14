@@ -54,14 +54,27 @@ button {
 }
 
 button,
+textarea,
 input {
     outline: none;
+}
+
+textarea {
+    resize: none;
 }
 
 button {
     display: inline-block;
     cursor: pointer;
     background-color: transparent;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
 label {

@@ -65,6 +65,8 @@
     margin-bottom: 10px;
     width: fit-content;
 
+    font-size: 26px;
+
     @include tranz;
 
     &::after {
@@ -83,6 +85,10 @@
     }
 }
 
+.project-card.project-card--big h4 {
+    font-size: 32px;
+}
+
 .project-card__description p {
     font-size: 20px;
     font-weight: 300;
@@ -90,4 +96,8 @@
     &:not(:last-child) {
         margin-bottom: 10px;
     }
+}
+
+.project-card.project-card--big .project-card__description p {
+    font-size: 22px;
 }

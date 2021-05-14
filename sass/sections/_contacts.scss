@@ -19,6 +19,8 @@
 }
 
 .contacts__content {
+    display: flex;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -72,5 +74,12 @@
 
     ul *:nth-child(n + 3) {
         color: #96969d;
+    }
+
+    a {
+        @include tranzpro(color);
+        &:hover {
+            color: var(--mainColor2);
+        }
     }
 }
