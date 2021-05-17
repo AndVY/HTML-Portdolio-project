@@ -10,7 +10,7 @@ for (let formItem of formItems) {
     });
 
     formItem.addEventListener('blur', () => {
-        if (formItem.value.length == 0) { placeholder.classList.remove('active'); }
+        if (formItem.value.trim().length == 0) { placeholder.classList.remove('active'); }
         formItem.classList.remove('active');
     });
 }

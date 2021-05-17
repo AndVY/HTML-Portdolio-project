@@ -1,0 +1,30 @@
+#page-nav {
+    z-index: 10;
+    position: fixed;
+    right: 80px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    li {
+        margin-bottom: 25px;
+        width: 14px;
+        height: 14px;
+
+        border-radius: 50%;
+        background-color: #89b4cb;
+        border: none;
+        outline: none;
+
+        transition: 0.5s;
+
+        &.active {
+            background-color: var(--mainColor2);
+        }
+
+        a {
+            display: block;
+            height: 100%;
+        }
+    }
+}

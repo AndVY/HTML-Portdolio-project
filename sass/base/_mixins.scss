@@ -1,7 +1,7 @@
 @mixin tranz {
-    transition: 0.2s ease-in;
+    transition: 0.3s ease-in;
 }
 
 @mixin tranzpro($property) {
-    transition: $property 0.2s ease-in;
+    transition: $property 0.3s ease-in;
 }

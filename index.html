@@ -67,7 +67,13 @@
         <meta name="theme-color" content="#ffffff" />
     </head>
     <body>
-        <header class="header">
+        <ul id="page-nav">
+            <li class="active"><a href="#header"></a></li>
+            <li><a href="#portfolio"></a></li>
+            <li><a href="#timeline"></a></li>
+            <li><a href="#contacts"></a></li>
+        </ul>
+        <header class="header" id="header">
             <div class="header-top">
                 <div class="header-top__logo">
                     <a href="./index.html"
@@ -318,9 +324,9 @@
             </div>
         </header>
 
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio">
             <div class="container">
-                <h2 class="underlined title-2">Портфолио</h2>
+                <h2 class="underlined title-2" id="portfolio">Портфолио</h2>
                 <nav class="filters">
                     <a class="filters__item filters__item--active" href="#!"
                         >Все работы</a
@@ -331,7 +337,11 @@
 
                 <!-- project-cards -->
                 <div class="project-cards">
-                    <a class="project-cards__wrapper" href="#!">
+                    <a
+                        target="_blank"
+                        class="project-cards__wrapper"
+                        href="https://andrewvy.ru/works/Forest-SCSS/main.html"
+                    >
                         <div class="project-card project-card--big">
                             <div class="project-card__image">
                                 <div class="btn btn--overlay">
@@ -367,7 +377,11 @@
                             </div>
                         </div>
                     </a>
-                    <a class="project-cards__wrapper" href="#!">
+                    <a
+                        target="_blank"
+                        class="project-cards__wrapper"
+                        href="https://andrewvy.ru/works/Unit-project/index.html"
+                    >
                         <div class="project-card">
                             <div class="project-card__image">
                                 <div class="btn btn--overlay">
@@ -423,7 +437,7 @@
             </div>
         </section>
 
-        <section class="timeline">
+        <section class="timeline" id="timeline">
             <div class="container">
                 <h2 class="title-2 underlined">Как я работаю</h2>
                 <!-- timeline__content -->
@@ -518,9 +532,9 @@
             </div>
         </section>
 
-        <section class="contacts" id="contacts">
+        <section class="contacts">
             <div class="container">
-                <h2 class="title-2 underlined">Контакты</h2>
+                <h2 class="title-2 underlined" id="contacts">Контакты</h2>
                 <div class="contacts__content">
                     <div class="contacts__content-info">
                         <div class="dots">
@@ -532,27 +546,39 @@
                             проектом — напишите мне.
                         </p>
                         <div class="contacts__content-data">
-                            <div class="contacts__content-names">
-                                <ul>
-                                    <li>Email</li>
-                                    <li>WhatsApp</li>
-                                    <li>Телефон</li>
-                                    <li>Адрес</li>
-                                </ul>
-                            </div>
-                            <div class="contacts__content-values">
-                                <ul>
-                                    <li>
-                                        <a
+                            <ul class="contacts__content-names">
+                                <li>
+                                    <span class="contacts__content-name"
+                                        >Email</span
+                                    ><span class="contacts__content-value"
+                                        ><a
                                             href="mailto:andrey.v.emelin@gmail.com"
                                             >andrey.v.emelin@gmail.com</a
-                                        >
-                                    </li>
-                                    <li>aemelin75</li>
-                                    <li>+7 (911) 965-XX-XX</li>
-                                    <li>Россия, Санкт-Петербург</li>
-                                </ul>
-                            </div>
+                                        ></span
+                                    >
+                                </li>
+                                <li>
+                                    <span class="contacts__content-name"
+                                        >WhatsApp</span
+                                    ><span class="contacts__content-value"
+                                        >aemelin75</span
+                                    >
+                                </li>
+                                <li>
+                                    <span class="contacts__content-name"
+                                        >Телефон</span
+                                    ><span class="contacts__content-value"
+                                        >+7 (911) 965-XX-XX</span
+                                    >
+                                </li>
+                                <li>
+                                    <span class="contacts__content-name"
+                                        >Адрес</span
+                                    ><span class="contacts__content-value"
+                                        >Россия, Санкт-Петербург</span
+                                    >
+                                </li>
+                            </ul>
                         </div>
                         <div class="social-icons">
                             <a href="#!" class="social-icon social-icon--gh">
@@ -689,10 +715,12 @@
         <!-- 3rd party scripts -->
         <script src="./libs/jquery-3.6.0.min.js"></script>
         <script src="./libs/jquery.validate.js"></script>
+        <script src="./libs/nav.js"></script>
 
         <!-- project scripts -->
         <script src="./js/workFilter.js"></script>
         <script src="./js/placeholder.js"></script>
         <script src="./js/sendForm.js"></script>
+        <script src="./js/pageNav.js"></script>
     </body>
 </html>
