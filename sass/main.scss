@@ -1,7 +1,7 @@
 // Base
 @import "./base/vars";
-@import "./base/base";
 @import "./base/mixins";
+@import "./base/base";
 @import "./base/utility";
 
 // Sections
@@ -14,6 +14,8 @@
 
 // Blocks
 
+@import "./blocks/hamburger";
+@import "./blocks/mobile-menu";
 @import "./blocks/buttons";
 @import "./blocks/titles";
 @import "./blocks/page-nav";

@@ -7,7 +7,7 @@ $c = true;
 
 // Save Basic Form parametrs
 $project_name = "AE Portfolio";
-$admin_email  = "andvy@yandex.ru";
+$admin_email  = "andrew@andrewvy.ru";
 $email_from  ="andrew@andrewvy.ru";
 // $form_subject = trim($_POST["form_subject"]);
 

@@ -67,12 +67,115 @@
         <meta name="theme-color" content="#ffffff" />
     </head>
     <body>
+        <!-- page vertical navigation -->
         <ul id="page-nav">
             <li class="active"><a href="#header"></a></li>
             <li><a href="#portfolio"></a></li>
             <li><a href="#timeline"></a></li>
             <li><a href="#contacts"></a></li>
         </ul>
+
+        <!-- overlay for mobile menu -->
+        <div id="overlay"></div>
+
+        <!-- mobile menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu__content">
+                <div class="header-top__logo">
+                    <a href="./index.html"
+                        ><span class="underlined">АЕ</span></a
+                    >
+                </div>
+                <nav class="mobile-menu__nav">
+                    <a class="mobile-menu__nav-item custom-link" href="#skills"
+                        >Услуги</a
+                    >
+                    <a
+                        class="mobile-menu__nav-item custom-link"
+                        href="#portfolio"
+                        >Работы</a
+                    >
+                    <a
+                        class="mobile-menu__nav-item custom-link"
+                        href="#contacts"
+                        >Контакты</a
+                    >
+                </nav>
+                <div class="social-icons">
+                    <a href="#!" class="social-icon social-icon--gh">
+                        <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fab"
+                            data-icon="github"
+                            class="svg-inline--fa fa-github fa-w-16"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a href="#!" class="social-icon social-icon--tel"
+                        ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fab"
+                            data-icon="telegram"
+                            class="svg-inline--fa fa-telegram fa-w-16"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"
+                            ></path></svg></a
+                    ><a href="#!" class="social-icon social-icon--vk">
+                        <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fab"
+                            data-icon="vk"
+                            class="svg-inline--fa fa-vk fa-w-18"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 576 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"
+                            ></path>
+                        </svg> </a
+                    ><a href="#!" class="social-icon social-icon--fb"
+                        ><svg
+                            aria-hidden="true"
+                            focusable="false"
+                            data-prefix="fab"
+                            data-icon="facebook-f"
+                            class="svg-inline--fa fa-facebook-f fa-w-10"
+                            role="img"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                            ></path>
+                        </svg>
+                    </a>
+                </div>
+                <a
+                    href="mailto:andrew@andrewvy.ru"
+                    class="custom-link custom-link--colored"
+                    >andrew@andrewvy.ru</a
+                >
+            </div>
+        </div>
+
         <header class="header" id="header">
             <div class="header-top">
                 <div class="header-top__logo">
@@ -165,7 +268,14 @@
                         </svg>
                     </a>
                 </div>
+
+                <!-- Mobile menu icon -->
+                <div class="mobile-menu-icon">
+                    <span></span>
+                </div>
             </div>
+            <!-- end of header-top -->
+
             <div class="header-info">
                 <div class="container">
                     <div class="header-info__content">
@@ -191,21 +301,46 @@
                         </div>
                         <div class="header-info__content-img">
                             <div class="header-info__content-img-wrapper">
-                                <img
-                                    src="./img/content-images/title-photo.png"
-                                    alt="Me"
-                                />
+                                <picture>
+                                    <source
+                                        media="(max-width:1199px)"
+                                        srcset="
+                                            ./img/content-images/title-photo-tablet.png
+                                        "
+                                    />
+                                    <img
+                                        src="./img/content-images/title-photo.png"
+                                        alt="Me"
+                                    />
+                                </picture>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- end of header-info -->
+
             <div class="header-image">
-                <img
-                    src="./img/site-images/backgrounds/header-img-1600.jpg"
-                    alt="Photo"
-                />
+                <picture>
+                    <source
+                        media="(max-width:767px)"
+                        srcset="
+                            ./img/site-images/backgrounds/header-img-768.jpg
+                        "
+                    />
+                    <source
+                        media="(max-width:1199px)"
+                        srcset="
+                            ./img/site-images/backgrounds/header-img-1199.jpg
+                        "
+                    />
+                    <img
+                        src="./img/site-images/backgrounds/header-img-1600.jpg"
+                        alt="Photo"
+                    />
+                </picture>
             </div>
+
             <div class="header-bottom" id="skills">
                 <div class="container">
                     <div class="header-bottom__content">
@@ -219,7 +354,7 @@
                                 <li>
                                     адаптивная верстка под мобильные устройства.
                                 </li>
-                                <li>оптимизация под retina экраны</li>
+                                <li>оптимизация под retina экраны.</li>
                                 <li>с Bootstrap и без него.</li>
                             </ul>
                             <div class="header-bottom__content-button">
@@ -314,17 +449,18 @@
                                 </a>
                             </div>
                             <a
-                                href="mailto:andrey.v.emelin@gmail.com"
+                                href="mailto:andrew@andrewvy.ru"
                                 class="custom-link"
-                                >andrey.v.emelin@gmail.com</a
+                                >andrew@andrewvy.ru</a
                             >
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- end of header-bottom -->
         </header>
 
-        <section class="portfolio">
+        <section class="portfolio none">
             <div class="container">
                 <h2 class="underlined title-2" id="portfolio">Портфолио</h2>
                 <nav class="filters">
@@ -437,7 +573,7 @@
             </div>
         </section>
 
-        <section class="timeline" id="timeline">
+        <section class="timeline none" id="timeline">
             <div class="container">
                 <h2 class="title-2 underlined">Как я работаю</h2>
                 <!-- timeline__content -->
@@ -532,7 +668,7 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts none">
             <div class="container">
                 <h2 class="title-2 underlined" id="contacts">Контакты</h2>
                 <div class="contacts__content">
@@ -551,9 +687,8 @@
                                     <span class="contacts__content-name"
                                         >Email</span
                                     ><span class="contacts__content-value"
-                                        ><a
-                                            href="mailto:andrey.v.emelin@gmail.com"
-                                            >andrey.v.emelin@gmail.com</a
+                                        ><a href="mailto:andrew@andrewvy.ru"
+                                            >andrew@andrewvy.ru</a
                                         ></span
                                     >
                                 </li>
@@ -691,7 +826,7 @@
             </div>
         </section>
 
-        <footer class="footer">
+        <footer class="footer none">
             <div class="container">
                 <div class="footer__content">
                     <div class="footer__copyright">
@@ -719,6 +854,7 @@
 
         <!-- project scripts -->
         <script src="./js/workFilter.js"></script>
+        <script src="./js/hamburger.js"></script>
         <script src="./js/placeholder.js"></script>
         <script src="./js/sendForm.js"></script>
         <script src="./js/pageNav.js"></script>
