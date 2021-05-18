@@ -39,6 +39,22 @@
     &::after {
         bottom: 19px;
     }
+
+    @media (max-width: 1199px) {
+        font-size: 52px;
+
+        &::after {
+            bottom: 14px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        font-size: 42px;
+
+        &::after {
+            bottom: 12px;
+        }
+    }
 }
 
 .title-3 {

@@ -9,6 +9,27 @@
     .title-2 {
         margin-bottom: 65px;
     }
+
+    @media (max-width: 1199px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        .title-2 {
+            margin-bottom: 55px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 60px;
+        padding-bottom: 95px;
+
+        .title-2 {
+            margin-bottom: 45px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
 
 .filters {
@@ -16,6 +37,14 @@
     align-items: center;
 
     margin-bottom: 50px;
+
+    @media (max-width: 1199px) {
+        margin-bottom: 45px;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .filters__item {
@@ -28,6 +57,14 @@
 
     &:not(:last-child) {
         margin-right: 80px;
+    }
+
+    @media (max-width: 1199px) {
+        font-size: 24px;
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
     }
 }
 
@@ -47,6 +84,20 @@
     flex-wrap: wrap;
 
     margin-bottom: -60px;
+
+    @media (max-width: 1199px) {
+        margin-bottom: 35px;
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 45px;
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 40px;
+        grid-template-columns: minmax(290px, 707px);
+        justify-items: center;
+    }
 }
 
 .project-cards__wrapper {
@@ -70,5 +121,41 @@
                 transform: translateX(0);
             }
         }
+    }
+
+    @media (max-width: 1199px) {
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    @media (max-width: 767px) {
+        max-width: 590px;
+    }
+}
+
+.portfolio__all {
+    display: none;
+    width: fit-content;
+    font-size: 20px;
+    color: var(--mainColor1);
+
+    @include tranz;
+
+    &::after {
+        top: 28px;
+        background-color: var(--mainColor1);
+    }
+
+    &:hover,
+    &:active {
+        color: var(--mainColor2);
+
+        &::after {
+            background-color: var(--mainColor2);
+        }
+    }
+
+    @media (max-width: 1199px) {
+        display: inline-block;
     }
 }

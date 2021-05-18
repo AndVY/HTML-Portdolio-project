@@ -460,7 +460,7 @@
             <!-- end of header-bottom -->
         </header>
 
-        <section class="portfolio none">
+        <section class="portfolio">
             <div class="container">
                 <h2 class="underlined title-2" id="portfolio">Портфолио</h2>
                 <nav class="filters">
@@ -483,10 +483,18 @@
                                 <div class="btn btn--overlay">
                                     Смотреть проект
                                 </div>
-                                <img
-                                    src="./img/content-images/works/work01.jpg"
-                                    alt="Site photo"
-                                />
+                                <picture>
+                                    <source
+                                        media="(max-width:1199px)"
+                                        srcset="
+                                            ./img/content-images/works/work01-tablet.jpg
+                                        "
+                                    />
+                                    <img
+                                        src="./img/content-images/works/work01.jpg"
+                                        alt="Site photo"
+                                    />
+                                </picture>
                             </div>
                             <div class="project-card__description">
                                 <h4 class="title-4">Верстка “Форест тревел”</h4>
@@ -500,10 +508,18 @@
                                 <div class="btn btn--overlay">
                                     Смотреть проект
                                 </div>
-                                <img
-                                    src="./img/content-images/works/work02.jpg"
-                                    alt="Site photo"
-                                />
+                                <picture>
+                                    <source
+                                        media="(max-width:1199px)"
+                                        srcset="
+                                            ./img/content-images/works/work02-tablet.jpg
+                                        "
+                                    />
+                                    <img
+                                        src="./img/content-images/works/work02.jpg"
+                                        alt="Site photo"
+                                    />
+                                </picture>
                             </div>
                             <div class="project-card__description">
                                 <h4 class="title-4">
@@ -570,6 +586,10 @@
                     </a>
                 </div>
                 <!-- end of project-cards -->
+
+                <a href="#!" class="portfolio__all custom-link"
+                    >Смотреть все работы</a
+                >
             </div>
         </section>
 
