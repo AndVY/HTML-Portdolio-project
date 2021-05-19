@@ -1,3 +1,45 @@
+@font-face {
+  font-family: "Mplus 1p";
+  src: url("./../fonts/mplus1p/Mplus1p-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mplus 1p";
+  src: url("./../fonts/mplus1p/Mplus1p-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mplus 1p";
+  src: url("./../fonts/mplus1p/Mplus1p-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mplus 1p";
+  src: url("./../fonts/mplus1p/Mplus1p-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mplus 1p";
+  src: url("./../fonts/mplus1p/Mplus1p-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Mplus 1p";
+  src: url("./../fonts/mplus1p/Mplus1p-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --textColor: #000;
   --mainColor1: #039be5;
@@ -1333,7 +1375,7 @@ a:hover {
 
 .title-1 {
   font-size: 90px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.15;
 }
 .title-1 span::after {
@@ -1366,7 +1408,7 @@ a:hover {
 
 .title-2 {
   font-size: 64px;
-  font-weight: 700;
+  font-weight: 800;
 }
 .title-2::after {
   bottom: 19px;
@@ -1829,4 +1871,5 @@ label.error {
   color: var(--mainColor1);
   text-shadow: 0 1px 1px #96969d;
 }
+
 /*# sourceMappingURL=main.css.map */
