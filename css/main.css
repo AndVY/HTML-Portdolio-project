@@ -800,8 +800,6 @@ a:hover {
 }
 
 .timeline {
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 150px;
   padding-bottom: 150px;
   background-image: url("../img/site-images/backgrounds/timeline-background.jpg");
@@ -815,6 +813,28 @@ a:hover {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+@media (max-width: 767px) {
+  .timeline .title-2 {
+    margin-bottom: 55px;
+    font-size: 38px;
+  }
+  .timeline .title-2::after {
+    bottom: 8px;
+  }
+}
+@media (max-width: 1199px) {
+  .timeline {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-image: none;
+  }
+}
+@media (max-width: 767px) {
+  .timeline {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+}
 
 .timeline__content {
   display: -webkit-box;
@@ -822,30 +842,35 @@ a:hover {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  -webkit-box-align: end;
+          align-items: flex-end;
   margin-left: auto;
   margin-right: auto;
   max-width: 1005px;
   padding-top: 60px;
-  padding-bottom: 85px;
 }
-.timeline__content .timeline-card:nth-child(even) {
-  align-self: flex-end;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-          flex-direction: row-reverse;
+.timeline__content .timeline-card:nth-child(odd) {
+  align-self: flex-start;
+  padding-left: 0;
+  padding-right: 85px;
 }
-.timeline__content .timeline-card:nth-child(even) .timeline-card__text {
-  text-align: left;
+.timeline__content .timeline-card:nth-child(odd) .timeline-card__text {
+  text-align: right;
 }
-.timeline__content .timeline-card:nth-child(even) .timeline-card__text::after {
-  left: 0;
-  -webkit-transform: translate(-84px, 79px);
-          transform: translate(-84px, 79px);
+.timeline__content .timeline-card:nth-child(odd) .timeline-card__text::after {
+  left: unset;
+  right: 0;
+  -webkit-transform: translate(87px, 79px);
+          transform: translate(87px, 79px);
+}
+.timeline__content .timeline-card:nth-child(odd) .timeline-card__image {
+  left: unset;
+  right: -37px;
 }
 .timeline__content .timeline-card:first-child .timeline-card__text::before {
   content: "";
   position: absolute;
-  right: -84px;
+  right: -87px;
   top: -92px;
   width: 4px;
   height: 57px;
@@ -854,6 +879,49 @@ a:hover {
 }
 .timeline__content .timeline-card:last-child .timeline-card__text::after {
   display: none;
+}
+.timeline__content .timeline-card:last-child {
+  padding-bottom: 0;
+  min-height: unset;
+}
+@media (max-width: 1199px) {
+  .timeline__content .timeline-card {
+    padding-bottom: 70px;
+    min-height: 210px;
+  }
+}
+@media (max-width: 767px) {
+  .timeline__content {
+    -webkit-box-align: start;
+            align-items: flex-start;
+    padding-top: 0;
+    width: 100%;
+  }
+  .timeline__content .timeline-card:first-child .timeline-card__text::before {
+    display: none;
+  }
+  .timeline__content .timeline-card:nth-child(1n) {
+    padding: 0;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    width: 100%;
+    min-height: 150px;
+  }
+  .timeline__content .timeline-card:nth-child(1n) .timeline-card__text {
+    padding-bottom: 20px;
+    text-align: left;
+  }
+  .timeline__content .timeline-card:nth-child(1n) .timeline-card__text::after {
+    left: 0;
+    top: 0;
+    bottom: 54px;
+    -webkit-transform: translate(-62px, 79px);
+            transform: translate(-62px, 79px);
+  }
+  .timeline__content .timeline-card:nth-child(1n) .timeline-card__image {
+    top: -4px;
+    left: 3px;
+  }
 }
 
 .contacts {
@@ -1307,19 +1375,6 @@ a:hover {
 .social-icon.social-icon--vk svg {
   height: 30px;
 }
-.social-icon.social-icon--fb {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  color: #fff;
-  background-color: var(--fbColor);
-}
-.social-icon.social-icon--fb svg {
-  height: 25px;
-}
 
 .project-card {
   display: block;
@@ -1486,13 +1541,11 @@ a:hover {
 }
 
 .timeline-card {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: end;
-          justify-content: flex-end;
+  position: relative;
   padding-top: 20px;
   padding-bottom: 65px;
-  max-width: 585px;
+  padding-left: 85px;
+  width: 50%;
   min-height: 245px;
   cursor: pointer;
 }
@@ -1506,6 +1559,24 @@ a:hover {
 .timeline-card p.timeline-card__time {
   font-weight: 700;
 }
+@media (max-width: 1199px) {
+  .timeline-card p {
+    font-size: 16px;
+    line-height: 1.38;
+  }
+  .timeline-card p.timeline-card__time {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .timeline-card p {
+    font-size: 14px;
+    line-height: 1.42;
+  }
+  .timeline-card p.timeline-card__time {
+    font-size: 14px;
+  }
+}
 .timeline-card:hover .timeline-card__text .title-4::after {
   transition: background-color 0.3s ease-in;
   background-color: var(--mainColor2);
@@ -1514,30 +1585,43 @@ a:hover {
 .timeline-card__text {
   position: relative;
   margin-top: 15px;
-  text-align: right;
+  text-align: left;
 }
 .timeline-card__text::after {
   content: "";
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   bottom: 14px;
   width: 4px;
-  -webkit-transform: translate(84px, 79px);
-          transform: translate(84px, 79px);
+  -webkit-transform: translate(-87px, 79px);
+          transform: translate(-87px, 79px);
   background-color: #e1eef4;
   border-radius: 2px;
 }
 
-.title-4 {
+.timeline-card__text .title-4 {
   margin-bottom: 10px;
   font-size: 26px;
 }
-.title-4::after {
+.timeline-card__text .title-4::after {
   left: 0;
   bottom: 5px;
   width: 100%;
   height: 7px;
+}
+@media (max-width: 1199px) {
+  .timeline-card__text .title-4 {
+    font-size: 24px;
+  }
+  .timeline-card__text .title-4::after {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .timeline-card__text .title-4 {
+    font-size: 20px;
+  }
 }
 
 .timeline-card__time {
@@ -1545,6 +1629,9 @@ a:hover {
 }
 
 .timeline-card__image {
+  position: absolute;
+  top: 17px;
+  left: -37px;
   flex-shrink: 0;
   display: -webkit-box;
   display: flex;
@@ -1552,8 +1639,6 @@ a:hover {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
-  margin-left: 45px;
-  margin-right: 45px;
   width: 74px;
   height: 74px;
   border-radius: 25px;
