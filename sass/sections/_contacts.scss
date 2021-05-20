@@ -72,6 +72,7 @@
         margin-right: 0px;
         width: 100%;
         max-width: 600px;
+        min-width: unset;
     }
 }
 
@@ -160,4 +161,11 @@
     max-width: 360px;
 
     font-weight: 500;
+
+    @include tranzpro(color);
+}
+
+.contacts__content-names .contacts__content-value.show-numbers:hover {
+    color: var(--mainColor1);
+    cursor: pointer;
 }
