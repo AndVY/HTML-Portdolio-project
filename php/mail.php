@@ -59,8 +59,9 @@ send_user_data_in_txt_file ($message);
 // header('location: ../thankyou.php');
 
 echo "<div class='contact-form__success'>
-		<h2>Ваша заявка принята!<br>
-		Мы свяжемся с&nbsp;Вами<br>в ближайшее время.
+		<h2>Спасибо за отзыв!<br>
+		Ваша заявка принята.<br>
+		Мы свяжемся с Вами<br>в ближайшее время.
 		</h2>
 	  </div> ";
 

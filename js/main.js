@@ -2,10 +2,8 @@ $(document).ready(function () {
 
     // WORKS FILTER part
     const filters = document.querySelectorAll('.filters__item');
-
     // Save currently shown element
     let currentlyShown = filters[0];
-
     // main part
     filters.forEach((value) => {
         value.addEventListener('click', function () {
@@ -15,6 +13,7 @@ $(document).ready(function () {
                 currentlyShown = this;
 
                 // Other actions for real filtering
+                // TODO
             };
         });
     });
@@ -46,7 +45,7 @@ $(document).ready(function () {
         toggleMobileMenu();
     });
 
-    // FORM PLACEHOLER part
+    // FORM PLACEHOLDER part
     const formItems = document.querySelectorAll('.contact-form__field');
 
     for (let formItem of formItems) {
@@ -117,7 +116,7 @@ $(document).ready(function () {
 
             // if success
             success: function (html) {
-                $(".contact-form").slideUp(200);
+                $(".contact-form").slideUp(500);
                 $('#answer').html(html);
             }
         });
@@ -126,7 +125,7 @@ $(document).ready(function () {
     }
 
     // PAGINATION part
-    // Pagination dots on the rigth of the page
+    // Vertical pagination dots on the rigth of the page
     $('#page-nav').onePageNav({
         currentClass: 'active',
         changeHash: false,

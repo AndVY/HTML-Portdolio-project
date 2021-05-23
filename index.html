@@ -23,10 +23,7 @@
         <link rel="stylesheet" href="./css/main.css" />
 
         <!-- Open Graph -->
-        <meta
-            property="og:url"
-            content="https://andrewvy.ru/works/Portfolio-project/index.html"
-        />
+        <meta property="og:url" content="https://andrewvy.ru/index.html" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Проект Портфолио" />
         <meta
@@ -510,7 +507,7 @@
         <section class="portfolio">
             <div class="container">
                 <h2 class="underlined title-2" id="portfolio">Портфолио</h2>
-                <nav class="filters">
+                <nav class="filters none">
                     <a class="filters__item filters__item--active" href="#!"
                         >Все работы</a
                     ><a class="filters__item" href="#!">Bootstrap</a
@@ -549,7 +546,7 @@
                             </div>
                         </div>
                     </a>
-                    <a class="project-cards__wrapper" href="#!">
+                    <a class="project-cards__wrapper" href="#">
                         <div class="project-card project-card--big">
                             <div class="project-card__image">
                                 <div class="btn btn--overlay">
@@ -569,9 +566,7 @@
                                 </picture>
                             </div>
                             <div class="project-card__description">
-                                <h4 class="title-4">
-                                    Сайт для коворкинга “Мечта”
-                                </h4>
+                                <h4 class="title-4">Верстка сайта портфолио</h4>
                                 <p>Верстка лендинга.</p>
                             </div>
                         </div>
@@ -594,40 +589,6 @@
                             <div class="project-card__description">
                                 <h4 class="title-4">Верстка “Юнит”</h4>
                                 <p>Верстка лендинга.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="project-cards__wrapper" href="#!">
-                        <div class="project-card">
-                            <div class="project-card__image">
-                                <div class="btn btn--overlay">
-                                    Смотреть проект
-                                </div>
-                                <img
-                                    src="./img/content-images/works/work04.jpg"
-                                    alt="Site photo"
-                                />
-                            </div>
-                            <div class="project-card__description">
-                                <h4 class="title-4">Верстка “Мир Авто”</h4>
-                                <p>Верстка многостраничного сайта.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="project-cards__wrapper" href="#!">
-                        <div class="project-card">
-                            <div class="project-card__image">
-                                <div class="btn btn--overlay">
-                                    Смотреть проект
-                                </div>
-                                <img
-                                    src="./img/content-images/works/work05.jpg"
-                                    alt="Site photo"
-                                />
-                            </div>
-                            <div class="project-card__description">
-                                <h4 class="title-4">Верстка “Мир Авто”</h4>
-                                <p>Верстка многостраничного сайта.</p>
                             </div>
                         </div>
                     </a>
@@ -655,7 +616,12 @@
                             <p class="timeline-card__time">Время: 2 - 4 часа</p>
                         </div>
                         <div class="timeline-card__image">
-                            <img src="./img/icons/layers.png" alt="Layers" />
+                            <img
+                                src="./img/icons/layers.png"
+                                width="40"
+                                height="40"
+                                alt="Layers"
+                            />
                         </div>
                     </div>
                     <div class="timeline-card">
@@ -673,6 +639,8 @@
                         <div class="timeline-card__image">
                             <img
                                 src="./img/icons/presentation-chart.png"
+                                width="39"
+                                height="40"
                                 alt="Chart"
                             />
                         </div>
@@ -692,6 +660,8 @@
                         <div class="timeline-card__image">
                             <img
                                 src="./img/icons/24-hours.png"
+                                width="36"
+                                height="40"
                                 alt="24 hours"
                             />
                         </div>
@@ -711,7 +681,12 @@
                             </p>
                         </div>
                         <div class="timeline-card__image">
-                            <img src="./img/icons/code-alt.png" alt="Code" />
+                            <img
+                                src="./img/icons/code-alt.png"
+                                width="42"
+                                height="35"
+                                alt="Code"
+                            />
                         </div>
                     </div>
                     <div class="timeline-card">
@@ -727,7 +702,12 @@
                             <p class="timeline-card__time">Время: 3 - 4 часа</p>
                         </div>
                         <div class="timeline-card__image">
-                            <img src="./img/icons/diamond.png" alt="Diamond" />
+                            <img
+                                src="./img/icons/diamond.png"
+                                width="40"
+                                height="35"
+                                alt="Diamond"
+                            />
                         </div>
                     </div>
                 </div>
@@ -881,45 +861,47 @@
                             </a>
                         </div>
                     </div>
-                    <form action="./php/mail.php" class="contact-form">
-                        <div class="contact-form__item">
-                            <span class="contact-form__fake-placeholder"
-                                >Ваш Email</span
-                            >
-                            <input
-                                type="text"
-                                name="email"
-                                class="contact-form__field"
-                            />
-                        </div>
-                        <div class="contact-form__item">
-                            <span class="contact-form__fake-placeholder"
-                                >Тема письма</span
-                            >
-                            <input
-                                type="text"
-                                name="subject"
-                                class="contact-form__field"
-                            />
-                        </div>
-                        <div class="contact-form__item">
-                            <span class="contact-form__fake-placeholder"
-                                >Сообщение</span
-                            >
-                            <textarea
-                                name="message"
-                                class="contact-form__field"
-                            ></textarea>
-                        </div>
-                        <div class="contact-form__item">
-                            <input
-                                type="submit"
-                                class="btn"
-                                value="Отправить"
-                            />
-                        </div>
-                    </form>
-                    <div id="answer"></div>
+                    <div class="form__wrapper">
+                        <form action="./php/mail.php" class="contact-form">
+                            <div class="contact-form__item">
+                                <span class="contact-form__fake-placeholder"
+                                    >Ваш Email</span
+                                >
+                                <input
+                                    type="text"
+                                    name="email"
+                                    class="contact-form__field"
+                                />
+                            </div>
+                            <div class="contact-form__item">
+                                <span class="contact-form__fake-placeholder"
+                                    >Тема письма</span
+                                >
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    class="contact-form__field"
+                                />
+                            </div>
+                            <div class="contact-form__item">
+                                <span class="contact-form__fake-placeholder"
+                                    >Сообщение</span
+                                >
+                                <textarea
+                                    name="message"
+                                    class="contact-form__field"
+                                ></textarea>
+                            </div>
+                            <div class="contact-form__item">
+                                <input
+                                    type="submit"
+                                    class="btn"
+                                    value="Отправить"
+                                />
+                            </div>
+                        </form>
+                        <div id="answer"></div>
+                    </div>
                 </div>
             </div>
         </section>
