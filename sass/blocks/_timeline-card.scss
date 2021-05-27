@@ -6,8 +6,6 @@
     width: 50%;
     min-height: 245px;
 
-    cursor: pointer;
-
     p {
         &:not(:last-child) {
             margin-bottom: 10px;
@@ -38,12 +36,12 @@
         }
     }
 
-    &:hover {
-        .timeline-card__text .title-4::after {
-            @include tranzpro(background-color);
-            background-color: var(--mainColor2);
-        }
-    }
+    // &:hover {
+    //     .timeline-card__text .title-4::after {
+    //         @include tranzpro(background-color);
+    //         background-color: var(--mainColor2);
+    //     }
+    // }
 }
 
 .timeline-card__text {

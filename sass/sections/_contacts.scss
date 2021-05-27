@@ -125,20 +125,15 @@
 .contacts__content-names li {
     display: flex;
 
-    &:nth-child(-n + 2) .contacts__content-value {
+    .contacts__content-value {
         color: var(--mainColor1);
 
-        a {
-            color: var(--mainColor1);
-            @include tranzpro(color);
-
-            &:hover {
-                color: var(--mainColor2);
-            }
+        &:hover {
+            color: var(--mainColor2);
         }
     }
 
-    &:nth-child(n + 3) .contacts__content-value {
+    &:last-child .contacts__content-value {
         color: #96969d;
     }
 

@@ -30,16 +30,22 @@
         color: var(--telColor);
     }
 
-    &.social-icon--vk {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        background-color: var(--vkColor);
-        svg {
-            height: 30px;
-        }
-    }
+    // &.social-icon--vk {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    //     color: #fff;
+    //     background-color: var(--vkColor);
+    //     svg {
+    //         height: 30px;
+    //     }
+    // }
+
+    // &.social-icon--wa {
+    //     svg {
+    //         height: 50;
+    //     }
+    // }
 
     // &.social-icon--fb {
     //     display: flex;

@@ -67,9 +67,11 @@ $(document).ready(function () {
     const showNumbers = document.querySelector('.show-numbers');
     showNumbers.addEventListener('mouseover', () => {
         showNumbers.textContent = '+7 (911) 965-78-71';
+        showNumbers.style.color = 'var(--mainColor2)';
     });
     showNumbers.addEventListener('mouseleave', () => {
         showNumbers.textContent = '+7 (911) 965-XX-XX';
+        showNumbers.style.color = 'var(--mainColor1)';
     });
 
 
